@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/test.css">
+    <title>تست Border</title>
+  </head>
+  <body>
+    <header class="bg-warning text-center p-3">تمرین سبد خرید</header>
+    <main style="height:100vh;">
+      <section   class="row  h-50 p-0">
+        <!--کانتینر اصلی -->
+        <div class="row col-lg-8 col-sm-12 d-flex justify-content-center bg-WHITE border m-0 p-5 ">
+          <h4 class="col-lg-12 text-center   ">محصولات</h4>
+            <!-- کانتینر کارت های محصول -->
+          <div id="products" class="cart row col-lg-12 rounded-4  p-0 gapCosttomssc d-flex justify-content-center ">
+          
+            <!-- کارت محصول -->
+            <div class="col-lg-3 col-sm-6 bg-white  border d-flex flex-column justify-content-center bg-white  rounded-4 m-2 box-shado ">
+              <div class=" d-flex justify-content-center "><img id="prodct" width="150" src="./img/11j0rboh_thumb3.jpeg" alt="" /></div>
+              <p>قیمت : <br> <span id="priceProducts"></span></p>
+              <p>نام محصول: <br> <span id="titleProducts"></span></p>
+              <button data-id="1" class="btnadd bg-success border-0 rounded-2 text-white p-2 mb-3 ">افزودن ب سبد خرید</button>
+            </div>
+             <!-- کارت محصول -->
+            <div class="cart col-lg-3 col-sm-6 bg-white border d-flex flex-column justify-content-center bg-white  rounded-4  m-2 box-shado">
+              <div class=" d-flex justify-content-center "><img id="prodct" width="150" src="./img/71KUECiWytL._AC_UF1000,1000_QL80_.jpg" alt="" /></div>
+              <p>قیمت : <br> <span id="priceProducts"></span></p>
+              <p>نام محصول: <br> <span id="titleProducts"></span></p>
+              <button data-id="2" class="btnadd bg-success border-0 rounded-2 text-white p-2 mb-3" >افزودن ب سبد خرید</button>
+            </div>
+             <!-- کارت محصول -->
+            <div class="cart col-lg-3 col-sm-6 bg-white border d-flex flex-column justify-content-center bg-white  rounded-4  m-2 box-shado">
+              <div class=" d-flex justify-content-center ">
+                <img id="prodct" width="150" src="./img/HP-936-Cyan-Ink-Cartridge-800-Pages-4S6U9LN_989542e4-0491-45a0-a28b-e68f147c65c8.702ad29006559e6bed2bc8e1c0672c23.avif" alt="" /></div>
+              <p>قیمت: <br> <span id="priceProducts"></span></p>
+              <p>نام محصول: <br> <span id="titleProducts"></span></p>
+              <button data-id="3"  class="btnadd bg-success border-0 rounded-2 text-white p-2 mb-3" >افزودن ب سبد خرید</button>
+            </div>
+             <!-- کارت محصول -->
+            <div class="cart col-lg-3 col-sm-6 bg-white border d-flex flex-column justify-content-center bg-white rounded-4  m-2 box-shado">
+              <div class=" d-flex justify-content-center "><img id="prodct" width="150" src="./img/11j0rboh_thumb3.jpeg" alt="" /></div>
+              <p>قیمت : <br><span id="priceProducts"></span></p>
+              <p>نام محصول: <br><span id="titleProducts"></span></p>
+              <button data-id="4" class="btnadd bg-success border-0 rounded-2 text-white p-2 mb-3 " >افزودن ب سبد خرید</button>
+            </div> 
+             <!-- کارت محصول -->
+            <div class="cart col-lg-3 col-sm-6 bg-white border d-flex flex-column justify-content-center bg-white rounded-4  m-2 box-shado">
+              <div class=" d-flex justify-content-center "><img id="prodct" width="150" src="./img/11j0rboh_thumb3.jpeg" alt="" /></div>
+              <p>قیمت : <br><span id="priceProducts"></span></p>
+              <p>نام محصول: <br><span id="titleProducts"></span></p>
+              <button data-id="5" class="btnadd bg-success border-0 rounded-2 text-white p-2 mb-3 " >افزودن ب سبد خرید</button>
+            </div>
+             <!-- کارت محصول -->
+            <div class="cart col-lg-3 col-sm-6 bg-white border d-flex flex-column justify-content-center bg-white rounded-4  m-2 box-shado">
+              <div class=" d-flex justify-content-center "><img id="prodct" width="150" src="./img/11j0rboh_thumb3.jpeg" alt="" /></div>
+              <p>قیمت : <br><span id="priceProducts"></span></p>
+              <p>نام محصول: <br><span id="titleProducts"></span></p>
+              <button data-id="6" class="btnadd bg-success border-0 rounded-2 text-white p-2 mb-3 " >افزودن ب سبد خرید</button>
+            </div>
+
+          </div>
+        </div>
+        <!-- کانتینر سبد خرید -->
+        <div class="col-lg-4 col-sm-12 bg-white">
+          <!-- لیست کالای انتخابی -->
+            <ul   id="list_product" class="styleul">
+
+            </ul>
+          <h4 class="col-lg-12 text-center">سبد خرید</h4>
+          <div>
+            <p><span id="totalprice"></span>:جمع سبد خرید</p>
+            <p><span id="totallenght"></span>:تعداد کالا</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/test.js"></script>
+  </body>
+</html>
